@@ -48,6 +48,11 @@ export class RecipeService {
     return this.recipeList.slice();
   }
 
+  // Set the index
+  getRecipeIndex(index: number) {
+    return this.recipeList[index];
+  }
+
   addIngToShoppingList(ingredient: Ingredient[]) {
     this.shoppingListService.addIngredients(ingredient);
   }
